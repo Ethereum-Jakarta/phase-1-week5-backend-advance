@@ -1,0 +1,17 @@
+{
+  "name": "product",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "elysia": "^1.3.4",
+    "stripe": "^18.2.1"
+  }
+}
