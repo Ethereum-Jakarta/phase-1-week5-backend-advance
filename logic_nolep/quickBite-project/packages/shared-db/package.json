@@ -1,0 +1,9 @@
+{
+   "name": "@quickbite/shared-db",
+   "version": "1.0.0",
+   "main": "index.ts",
+   "types": "module",
+   "dependencies": {
+      "drizzle-orm": "^0.44.4"
+   }
+}
