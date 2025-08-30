@@ -1,0 +1,25 @@
+{
+  "name": "ws_chat",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/static": "^1.1.1",
+    "@elysiajs/websocket": "^0.2.8",
+    "@neondatabase/serverless": "^0.10.4",
+    "drizzle-orm": "^0.37.0",
+    "elysia": "^1.1.26"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "bun-types": "latest",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.29.1",
+    "typescript": "^5.7.2",
+    "@elysiajs/swagger": "^1.1.6"
+  }
+}

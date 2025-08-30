@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+*/node_modules/
+**/node_modules/
+services/*/node_modules/
+bun.lockb
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+
+# Migration files
+**/migrations/*
+drizzle/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+*.pem
+
+# PM2
+.pm2/
+
+# Temp files
+*.tmp
+*.temp
+.cache
+
+# Service specific ignores
+services/*/dist
+services/*/.env
+services/*/logs
+services/*/*.log

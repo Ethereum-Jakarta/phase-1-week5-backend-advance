@@ -1,0 +1,28 @@
+{
+  "name": "catalog-service",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "test": "bun test --preload ./tests/setup.ts",
+    "test:unit": "bun test tests/unit/**/*.test.ts --preload ./tests/setup.ts",
+    "test:watch": "bun test --watch --preload ./tests/setup.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun run src/db/migrate.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "latest",
+    "@elysiajs/jwt": "latest",
+    "@elysiajs/swagger": "latest",
+    "drizzle-orm": "latest",
+    "elysia": "latest",
+    "postgres": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "latest",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.7"
+  }
+}

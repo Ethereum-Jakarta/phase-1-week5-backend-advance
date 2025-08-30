@@ -1,0 +1,15 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.6",
+    "elysia": "^1.1.26"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

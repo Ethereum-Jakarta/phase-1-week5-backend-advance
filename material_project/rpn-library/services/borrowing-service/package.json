@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun run src/db/migrate.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "latest",
+    "@elysiajs/jwt": "latest",
+    "@elysiajs/swagger": "latest",
+    "amqplib": "^0.10.5",
+    "bcrypt": "^5.1.1",
+    "drizzle-orm": "latest",
+    "elysia": "latest",
+    "jsonwebtoken": "^9.0.2",
+    "postgres": "latest"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "bun-types": "latest",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "latest"
+  }
+}

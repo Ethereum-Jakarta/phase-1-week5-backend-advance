@@ -1,0 +1,17 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "latest",
+    "@elysiajs/swagger": "latest",
+    "elysia": "latest",
+    "jsonwebtoken": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "@types/jsonwebtoken": "latest"
+  }
+}

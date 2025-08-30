@@ -1,0 +1,24 @@
+{
+  "name": "microservices-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js",
+    "stop": "pm2 stop all",
+    "restart": "pm2 restart all",
+    "monitor": "pm2 monit",
+    "logs": "pm2 logs",
+    "logs:gateway": "pm2 logs gateway",
+    "logs:users": "pm2 logs user-service",
+    "logs:products": "pm2 logs product-service",
+    "logs:orders": "pm2 logs order-service",
+    "logs:monitor": "pm2 logs monitor",
+    "flush": "pm2 flush",
+    "delete": "pm2 delete all",
+    "status": "pm2 status",
+    "prettylog": "pm2 logs --timestamp --format",
+    "save": "pm2 save",
+    "reload": "pm2 reload all",
+    "startup": "pm2 startup",
+    "report": "pm2 report"
+  }
+}

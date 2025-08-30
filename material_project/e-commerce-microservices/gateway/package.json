@@ -1,0 +1,15 @@
+{
+  "name": "agteway", 
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "elysia": "latest",
+    "@elysiajs/swagger": "latest",
+    "@elysiajs/cors": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
