@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+</head>
+<body>
+    <h1>Welcome, <%= username %></h1>
+    <a href="/logout">Logout</a>
+    <hr>
+    <h2>Chat Room</h2>
+    <div id="chat-box"></div>
+    <input type="text" id="chat-input" placeholder="Type a message...">
+    <button class="send-btn" onclick="sendMessage()">Send</button>
+    
+    <script src="/js/script.js" defer></script>
+</body>
+</html>
