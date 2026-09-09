@@ -5,4 +5,5 @@
 * **Frontend Repository:** https://github.com/r3belchain/frontend-bridgehub
 * **Live Demo:** https://bridgehub-space.vercel.app/
 * **Swagger API Docs:** https://bridgehubspaces.duckdns.org/v1/docs
-* **Members:** rebel
+
+-rebel
