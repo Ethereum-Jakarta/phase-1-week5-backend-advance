@@ -1,5 +1,5 @@
-import { Elysia } from "elysia";
 import { jwt } from "@elysiajs/jwt";
+import { Elysia } from "elysia";
 import { AuthPayloadSchema } from "./auth.schema";
 import { AuthService } from "./auth.service";
 
@@ -16,14 +16,14 @@ export const authController = new Elysia({ prefix: "/auth" })
     async ({ body, set }) => {
       try {
         const user = await AuthService.register(body);
-        set.status = 201; 
+        set.status = 201;
         return {
           status: "success",
           message: "Registrasi berhasil",
           data: user,
         };
       } catch (error: any) {
-        set.status = 400; 
+        set.status = 400;
         return {
           status: "error",
           message: error.message,
@@ -31,7 +31,7 @@ export const authController = new Elysia({ prefix: "/auth" })
       }
     },
     {
-      body: AuthPayloadSchema, 
+      body: AuthPayloadSchema,
     },
   )
   // Endpoint: POST /auth/login
@@ -41,7 +41,7 @@ export const authController = new Elysia({ prefix: "/auth" })
       const user = await AuthService.login(body);
 
       if (!user) {
-        set.status = 401; 
+        set.status = 401;
         return {
           status: "error",
           message: "Username atau password salah",

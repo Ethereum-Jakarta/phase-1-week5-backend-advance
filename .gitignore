@@ -1,0 +1,16 @@
+# Node / Bun Dependencies (Di mana pun lokasinya)
+**/node_modules/
+node_modules/
+
+# Database SQLite
+*.db
+*.db-journal
+**/sqlite.db
+
+# Environment Variables
+.env
+**/.env
+
+# System files
+.DS_Store
+Thumbs.db
